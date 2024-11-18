@@ -17,9 +17,11 @@ html {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Optional: To center content */
+    justify-content: center; /* Optional: Horizontal centering */
+    align-items: center; /* Optional: Vertical centering */
 }
 
 .section {
