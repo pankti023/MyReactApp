@@ -41,6 +41,7 @@ function WorkExp() {
 
     return (
         <section id="workexperience" className="section">
+            <div className='container'>
             <h2>Work Experience</h2>
             <div className="experience-list">
                 {WorkExperience.map((job, index) => (
@@ -55,6 +56,7 @@ function WorkExp() {
                         </ul>
                     </div>
                  ))}
+            </div>
             </div>
         </section>
     );

@@ -150,17 +150,19 @@ function Hero() {
 
   return (
     <section id="large-header" className="hero">
-      <canvas ref={canvasRef} id="demo-canvas" className="particles-canvas"></canvas>
-      <div className="hero-content">
-        <h1>Pankti Parikh</h1>
-        <p className="hero-subtitle"> Computer Science Engineer | Retail Manager </p>
-        <div className="hero-links">
-          <a href="mailto:parikhpankti023@gmail.com" className="hero-link">
-            <i className="fas fa-envelope"></i> Email
-          </a>
-          <a href="https://www.linkedin.com/in/panktiparikh023" className="hero-link">
-            <i className="fab fa-linkedin"></i> LinkedIn
-          </a>
+      <div className="container">
+        <canvas ref={canvasRef} id="demo-canvas" className="particles-canvas"></canvas>
+        <div className="hero-content">
+          <h1>Pankti Parikh</h1>
+            <p className="hero-subtitle"> Computer Science Engineer | Retail Manager </p>
+              <div className="hero-links">
+                <a href="mailto:parikhpankti023@gmail.com" className="hero-link">
+                  <i className="fas fa-envelope"></i> Email
+                </a>
+              <a href="https://www.linkedin.com/in/panktiparikh023" className="hero-link">
+                <i className="fab fa-linkedin"></i> LinkedIn
+              </a>
+          </div>
         </div>
       </div>
     </section>
