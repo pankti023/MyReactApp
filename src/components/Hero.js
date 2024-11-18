@@ -3,7 +3,7 @@ import './Hero.css';
 
 function Hero() {
   const canvasRef = useRef(null);
-  const mousePos = useRef({ x: 0, y: 0 });
+  //const mousePos = useRef({ x: 0, y: 0 });
   const target = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
