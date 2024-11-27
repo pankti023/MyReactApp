@@ -1,0 +1,65 @@
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 15px;
+  }
+  
+  .footer .social-icon {
+    color: white;
+    font-size: 40px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icon:hover {
+    color: #f0a500;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+  }
+  
+  /* Chat Button Styles */
+  .chat-button {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .chat-button:hover {
+    background-color: #e09c00;
+    width: 100px;
+  }
+  
+  /* Mobile View for Footer */
+  @media (max-width: 768px) {
+    .footer .social-icons {
+      gap: 15px; /* Less gap on mobile */
+    }
+  
+    .chat-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .footer p {
+      font-size: 14px;
+    }
+  }
+  

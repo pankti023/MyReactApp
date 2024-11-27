@@ -1,0 +1,107 @@
+/* Section Styling */
+.experience-section {
+    padding: 50px 20px;
+    background-color: #f4f7fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Work Experience Item Styling */
+  .experience-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect on Work Experience Item */
+  .experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Job Title Styling */
+  h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  /* Company Name Styling */
+  .company {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  /* Job Duration Styling */
+  .duration {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Job Description List Styling */
+  .job-description {
+    list-style-type: none;
+    padding-left: 20px;
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  /* Adding Animation to Job Items */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Applying Fade-In Effect on Each Job Item */
+  .experience-item {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding : 0 /*30px 12px*/;
+      margin: 0;
+      overflow-x: hidden;
+
+    }
+  
+    h2 {
+      font-size: 2em;
+    }
+  
+    .experience-item {
+      margin-bottom: 20px;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+    }
+  }

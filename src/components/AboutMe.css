@@ -1,0 +1,149 @@
+/* General body styling */
+.about-me-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+}
+
+.heading {
+  color: #f6a5a1; /* Peach color for a more subtle look */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-paragraph {
+  color: #495057;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+  grid-gap: 30px;
+  padding: 20px 0;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.subheading {
+  color: #343a40;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.grid-item:hover .subheading {
+  color: #007BFF;
+}
+
+.paragraph {
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Colorful backgrounds for expanded sections */
+.grid-item.expanded {
+  background-color: #f3f9f7; /* Light soothing background */
+}
+
+.grid-item.expanded.passion {
+  background-color: #fff4e6; /* Soft peach */
+}
+
+.grid-item.expanded.learning {
+  background-color: #e6f7ff; /* Light blue */
+}
+
+.grid-item.expanded.collab {
+  background-color: #f9f3ff; /* Light lavender */
+}
+
+.grid-item.expanded.fun-facts {
+  background-color: #e6ffe6; /* Light green */
+}
+
+.grid-item:hover .subheading {
+  color: #007BFF;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Make grid items stack vertically */
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 10px;
+    
+  }
+
+  /* Adjust heading size for smaller screens */
+  .heading {
+    font-size: 2rem;
+  }
+
+  /* Adjust intro paragraph font size */
+  .intro-paragraph {
+    font-size: 1rem;
+  }
+
+  /* Reduce grid item padding for smaller screens */
+  .grid-item {
+    padding: 15px;
+  }
+
+  /* Adjust subheading font size */
+  .subheading {
+    font-size: 1.2rem;
+  }
+
+  /* Optional: Change hover scale effect for smaller screens */
+  .grid-item:hover {
+    transform: scale(1.02); /* Slightly smaller scale effect */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens like phones */
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .intro-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .subheading {
+    font-size: 1rem;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
+  /* Optional: Adjust grid layout on very small screens */
+  .grid-container {
+    grid-template-columns: 1fr; /* Keep single column layout */
+    padding: 5px;
+  }
+}
