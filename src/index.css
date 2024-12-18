@@ -1,0 +1,615 @@
+/* General Section Styles */
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll but allow vertical scrolling */
+}
+
+body {
+	margin: 0;
+	background-color: #ffffff; /* White background */
+	font-family: Arial, sans-serif;
+	color: #000000; /* Black text color */
+	height: 100%; /* Make sure body fills the screen */
+  }
+  
+.section {
+  padding: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the sections */
+  gap: 100px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+/* Section Heading */
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.section .content {
+  display: flex;
+  justify-content: space-between; /* Space out content */
+  gap: 40px;
+  align-items: center; /* Aligns the items vertically to the center */
+  padding: 30px auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 1000;
+}
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navigation li {
+  margin: 0 10px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links button:hover {
+  color: #f0a500;
+}
+
+
+/* Hero Styles */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+/* Ball animation styling */
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 1; /* Keep balls behind the content */
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+	font-size: 3.5rem;
+  margin-bottom: 10px;
+	color: #000; /* Black text for the name */
+  }
+  
+  .hero-subtitle {
+	font-size: 1.5rem;
+  margin-bottom: 20px;
+	color: #333; /* Dark grey for the subtitle */
+  }
+  
+  .hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hero-link {
+  transition: color 0.3s ease;
+	color: #000000; /* Black links */
+	text-decoration: none;
+	font-size: 1.1rem;
+  }
+  
+  .hero-link:hover {
+    color: #b508ef;
+  }
+   
+
+/* About Styles */
+.about-me-container {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+}
+.header {
+  text-align: center;
+}
+
+.heading {
+  color: #f6a5a1; /* Peach color for a more subtle look */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-paragraph {
+  color: #495057;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+  grid-gap: 30px;
+  padding: 20px 0;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.about-me-container .subheading {
+  color: #343a40;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.grid-item:hover .subheading {
+  color: #ff0084;
+}
+
+.paragraph {
+  color: #495057;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Colorful backgrounds for expanded sections */
+.grid-item.expanded {
+  background-color: #f3f9f7; /* Light soothing background */
+}
+
+.grid-item.expanded.passion {
+  background-color: #fff4e6; /* Soft peach */
+}
+
+.grid-item.expanded.learning {
+  background-color: #e6f7ff; /* Light blue */
+}
+
+.grid-item.expanded.collab {
+  background-color: #f9f3ff; /* Light lavender */
+}
+
+.grid-item.expanded.fun-facts {
+  background-color: #e6ffe6; /* Light green */
+}
+
+
+/* Work Experience Item Styling */
+/* Section Styling */
+.experience-section {
+  padding: 50px 20px;
+  background-color: #f4f7fa;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Heading Styling */
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.experience-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Work Experience Item */
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Title Styling */
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #4CAF50;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Company Name Styling */
+.company {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Job Duration Styling */
+.duration {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Job Description List Styling */
+.job-description {
+  list-style-type: none;
+  padding-left: 20px;
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/*Education*/
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+.vertical-timeline::before {
+  background: none; /* Removes the default vertical line */
+}
+
+.vertical-timeline-element {
+  margin-bottom: 20px;
+}
+
+.vertical-timeline-element-content {
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Element Title - Purple Color */
+.vertical-timeline-element-title {
+    font-size: 1.50rem;
+    font-weight: bold;
+    color: #d61077; /* Purple color */
+  }
+  
+
+.vertical-timeline-element-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Skills style */
+.skills-charts {
+  display: flex;
+  justify-content: space-between; /* Space between charts */
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Individual chart container */
+.chart-container {
+  width: 45%;  /* Set initial width for larger screens */
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+/* Projects Styles */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  color: #007bff;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer p {
+  margin-top: 10px;
+}
+
+.chat-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Chat Modal Styles */
+.chat-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1001;
+}
+
+.chat-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.chat-modal textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.chat-modal button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.chat-button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Modal Styles */
+.chat-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.chat-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.chat-modal h2 {
+  margin-bottom: 20px;
+}
+
+.chat-modal textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+      overflow-x: hidden; /* Ensure no horizontal scrolling on smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Reduce the container width on mobile for better spacing */
+    padding: 15px; /* Adjust padding for mobile */
+    margin: auto;
+  }
+
+  .navigation ul {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+    .section {
+    padding: 50px 0;
+  }
+  .navigation li {
+    margin: 5px;
+  }
+
+  .navigation button {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+
+  .hero-content {
+      position: relative;
+      z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+
+  .projects-grid,
+  .skills-charts {
+    flex-direction: column; /* Stack the charts vertically on mobile */
+    align-items: center;
+  }
+
+  .chart-container {
+    width: 90%; /* Increase width on mobile devices */
+    margin-bottom: 30px; /* Add space between stacked charts */
+    
+  }
+
+  /* Make grid items stack vertically */
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 15px;
+  }
+
+  /* Adjust heading size for smaller screens */
+  .heading {
+    font-size: 2rem;
+  }
+
+  /* Adjust intro paragraph font size */
+  .intro-paragraph {
+    font-size: 1rem;
+  }
+
+  /* Reduce grid item padding for smaller screens */
+  .grid-item {
+    padding: 15px;
+  }
+
+  /* Adjust subheading font size */
+  .subheading {
+    font-size: 0.25rem;
+  }
+
+  /* Optional: Change hover scale effect for smaller screens */
+  .grid-item:hover {
+    transform: scale(1.02); /* Slightly smaller scale effect */
+  }
+
+  .chat-modal {
+    width: auto;  /* Increase the width on smaller screens */
+    padding: 15px; /* Reduce padding */
+    align-items: center;
+  }
+  .chat-modal h2 {
+    font-size: 1.3rem;
+  }
+  .chat-modal textarea {
+    height: 100px; /* Adjust height of the textarea on mobile */
+  }
+  .chat-modal button {
+    width: 100%; /* Make buttons full-width on mobile */
+    padding: 0;
+  }
+  .chat-overlay {
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .section {
+    transition: none;
+    padding: 10px 0;
+  }
+}
